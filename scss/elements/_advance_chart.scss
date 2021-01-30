@@ -1,0 +1,25 @@
+.single_advance_chart{
+    canvas{
+        width: 287px !important;
+        height: 287px !important;
+    }
+}
+
+.chartjsLegend li span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+
+.legend {
+    color: #fff333;
+    font-size: 20px;
+ }
+ .legend ul li{list-style:none;}
+ .legend ul li span{ width:50px; height:15px;display:inline-block; margin-right:5px; }
+
+ h3.title{
+    font-size: 34px;
+ }

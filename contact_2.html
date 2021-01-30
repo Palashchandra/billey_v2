@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>billey</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- themify icon CSS -->
+    <link rel="stylesheet" href="vendors/themify_icons/themify-icons.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css" />
+    <!-- niceselect CSS -->
+    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloder_part">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- header part -->
+    <header class="header_part dark dark pl_85 pr_85 canvus_menu_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg justify-content-between align-items-center">
+                        <a class="navbar-brand main_logo" href="index.html"><img src="img/dark_logo.png" srcset="img/dark_logo.png 2x" alt="logo">
+                        </a>
+                        <a class="navbar-brand sticky_logo" href="index.html"><img src="img/dark_logo.png" srcset="img/dark_logo.png 2x" alt="logo">
+                        </a>
+
+                        <div class="header_right_option">
+                            <div id="dl_collaps_menu_icon"
+                                class="blue_hover dl_collaps_menu_icon d-flex align-items-center">
+                                <div class="burger_icon  text-white">
+                                    <span class="burger_icon_top"></span>
+                                    <span class="burger_icon_bottom"></span>
+                                </div>
+                                <div class="burger_title text-white">Menu</div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- canvus_menu -->
+    <div class="canvus_menu">
+        <div class="popup-close-button canvus_close_icon">
+            <div class="burger-icon">
+                <span class="burger-icon-top"></span>
+                <span class="burger-icon-bottom"></span>
+            </div>
+        </div>
+        <div class="canvus_menu_warp">
+            <div class="canvus_menu_iner">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio_exhibition.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product_layout_1.html">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  canvus_menu -->
+
+    <!-- banner part here -->
+    <section class="contact_map">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-12 p-0">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- contact section part -->
+    <section class="contact_section section_padding dl_white_bg">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact_section_content pr-lg-4">
+                        <h2 class="title green_color">Let's discuss your projects now</h2>
+                        <p class="description">Contact us to give life to awesome ideas or make suggestions on
+                            improvements
+                            to be made. </p>
+                        <div class="social_icon">
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="Facebook"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="twitter"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="instagram"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="dribbble"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="pinterest"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact_section_content">
+                        <form class="contact_form" action="contact_process.php" method="post" id="contactForm"
+                            novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="single_contact_form">
+                                        <input type="text" name="name" id="name" class="form-control"
+                                            placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_contact_form">
+                                        <input type="text" name="email" id="email" class="form-control"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_contact_form">
+                                        <input type="text" name="subject" id="subject" class="form-control"
+                                            placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_contact_form">
+                                        <select class="nc_select">
+                                            <option data-display="Your Budget">Your Budget</option>
+                                            <option value="1">$100</option>
+                                            <option value="2">$200</option>
+                                            <option value="4">$300</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="single_contact_form">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div
+                                        class="single_contact_form d-md-flex justify-content-between align-items-center">
+                                        <p class="form_note">*Your email address will not be published.</p>
+                                        <button type="submit"
+                                            class="cu_btn gradient_btn text-uppercase button-contactForm">send
+                                            message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="success">Your message succesfully sent!</div>
+                        <div id="error">Opps! There is something wrong. Please try again</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer content here -->
+    <footer class="footer_content section_padding dark_bg pl_85 pr_85">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-sm-12">
+                    <div class="single_footer_widget">
+                        <a href="#" class="footer_logo"> <img src="img/light_logo.png" srcset="img/light_logo.png 2x" alt="#"> </a>
+                        <div class="social_icon">
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="Facebook"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="twitter"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="instagram"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="dribbble"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a class="dl_tooltip_bounce dl_tooltip_top_right dl_tooltip_white" aria-label="pinterest"
+                                href="#" target="_blank" rel="nofollow">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                        <p class="copyright_desc">© 2020 BilleyTheme by Droitlab </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="single_footer_widget">
+                        <h4 class="widget_tittle">Company</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="single_footer_widget">
+                        <h4 class="widget_tittle">Contacts</h4>
+                        <ul>
+                            <li>2005 Stokes Isle Apt. 896,
+                                Venaville 10010, USA</li>
+                            <li><a href="#">(+12) 345 6789</a></li>
+                            <li><a href="#">hello@billeystud.io</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-12">
+                    <div class="single_footer_widget">
+                        <h4 class="widget_tittle">Newsletter</h4>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://droitlab.us17.list-manage.com/subscribe/post?u=76b0fef40e7828eb4ff8eb754&id=fbff4a1aff"
+                                method="get" class="subscribe_form relative mail_part" required>
+                                <div class="input-group">
+                                    <input type="text" id="newsletter-form-email" class="form-control" placeholder="Enter your email">
+                                    <div class="input-group-append ">
+                                        <button type="submit" name="submit" id="newsletter-submit"
+                                        class="email_icon newsletter-submit button-contactForm input-group-text blue_bg"><i
+                                        class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                        <p class="widget_dec">Enter your email address for receiving valuable newsletters and insights
+                            on the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer content end -->
+
+    <!-- scorl to top -->
+    <a class="dl_scorl_top btn--plain hide-from-print" href="#" id="dl_scorl_top">
+        <div class="page-scroll-up">
+            <i class="arrow-top fas fa-angle-up"></i>
+            <i class="arrow-bottom fas fa-angle-up"></i>
+        </div>
+    </a>
+
+    <!-- Start plate -->
+    <div id="dl_theme-settings" class="dl_color-theme-demos">
+        <div class="dl_setting_icon">
+            <a class="dl_tooltip_bounce dl_tooltip_left dl_tooltip_dark settingBtn" aria-label="Select Demo" href="#" target="_blank" rel="nofollow">
+                <i class="fas fa-pencil-ruler"></i>					
+            </a>
+            <a class="dl_tooltip_bounce dl_tooltip_left dl_tooltip_dark" aria-label="Purchase Billey" href="https://themeforest.net/item/billey-creative-portfolio-agency-multipurpose-html5-template/28449407" target="_blank" rel="nofollow">
+                <i class="fas fa-shopping-cart"></i>				
+            </a>
+        </div>
+        
+        <div class="dl_skin-body">
+            <div class="dl_skin-wrap">
+                <div class="skin_wrap_title">
+                    <h5 class="dl_title">Billey – Ultimate Multipurpose Creative Html template</h5>
+                    <a href="https://themeforest.net/item/billey-creative-portfolio-agency-multipurpose-html5-template/28449407" class="cu_btn green_btn sm_btn"> <i class="fas fa-shopping-cart"></i> Buy Now</a>
+                </div>
+                <div class="dl_sw-demo">
+                    <div class="dl_set-theme-style">
+                        <a href="index.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="designing freelance" target="_blank">
+                            <img src="img/prev/home-preview-designing-freelance.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="digital_incentives.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="digital incentives" target="_blank">
+                            <img src="img/prev/home-preview-digital-incentives.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="emarketing_strategies.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="emarketing strategies" target="_blank">
+                            <img src="img/prev/home-preview-emarketing-strategies.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="essential.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="essential" target="_blank">
+                            <img src="img/prev/home-preview-essential.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="film_production.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="film production" target="_blank">
+                            <img src="img/prev/home-preview-film-production.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="freelancing_projects.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="freelancing projects" target="_blank">
+                            <img src="img/prev/home-preview-freelancing-projects.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="inspirational_creations.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="inspirational creations" target="_blank">
+                            <img src="img/prev/home-preview-inspirational-creations.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="lifestyle_blogs.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="lifestyle blogs" target="_blank">
+                            <img src="img/prev/home-preview-lifestyle-blogs.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="modern_branding.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="modern branding" target="_blank">
+                            <img src="img/prev/home-preview-modern-branding.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="portfolio_exhibition.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="portfolio exhibition" target="_blank">
+                            <img src="img/prev/home-preview-portfolio-exhibition.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="press_agencies.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="press agencies" target="_blank">
+                            <img src="img/prev/home-preview-press-agencies.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="dl_set-theme-style">
+                        <a href="travel_agency.html" class="dl_tooltip_bounce dl_tooltip_top dl_tooltip_dark" aria-label="travel agency" target="_blank">
+                            <img src="img/prev/home-preview-travel-agency.jpg" alt="#" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End plate -->
+
+    <!-- jquery slim -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- wow js -->
+    <script src="vendors/wow/wow.min.js"></script>
+    <!-- niceselect js -->
+    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
+    <!-- headroom js -->
+    <script src="vendors/headroom.js"></script>
+    <!-- map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs3mrTgrYd6_hJS50x4Sha1lPtS2T-_JA"></script>
+    <script src="js/map.js"></script>
+    <!-- contact js -->
+    <script src="vendors/contact/contact.js"></script>
+    <script src="vendors/contact/jquery.form.js"></script>
+    <script src="vendors/contact/jquery.validate.min.js"></script>
+    <!-- ajaxchimp js -->
+    <script src="vendors/contact/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/contact/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

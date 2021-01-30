@@ -1,0 +1,195 @@
+.contact_section{
+    &.dark_bg{
+        background-color: #111;
+    }
+    &.sec_padding{
+        padding: 147px 0 113px;
+        @media #{$tab}{
+            padding: 80px 0;
+        }
+    }
+    h2{
+        font-size: 40px;
+        line-height: 1.3em;
+        color: $white;
+        @media #{$tab}{
+            font-size: 25px;
+        }
+    }
+    p{
+        margin-top: 35px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    .social_icon{
+        margin-top: 52px;
+        @media #{$tab}{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        a{
+            font-size: 20px;
+            margin-right: 15px;
+            color: $white;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .contact_form{
+        textarea, .form-control, .nc_select{
+            border-radius: 0;
+            background-color: transparent;
+            background-color: rgba(255,255,255,0);
+            border-color: rgba(255,255,255,.11);
+            border-width: 0 0 2px;
+            margin-bottom: 29px;
+            line-height: 50px;
+            color: #fff;
+            height: 0;
+            padding: 0;
+            height: 50px;
+            width: 100%;
+            font-size: 18px;
+            @include transform_time(.3s);
+            &:focus{
+                border-color: rgba(255,255,255, 1);
+            }
+            .list{
+                width: 100%;
+                color: $heading_color;
+            }
+             .option.selected {
+                font-weight: normal;
+            }
+        }
+        textarea{
+            width: 100%;
+            min-height: 110px;
+            line-height: auto;
+        }
+        ::placeholder{
+            color: $white;
+        }
+        .btn_3{
+            color: $heading_color;
+            border-width: 1px;
+            &:hover{
+                background-color: $white;
+                border: 1px solid $white;
+                color: $base_color;
+            }
+        }
+        .form_note{
+            margin-top: 0;
+            font-size: 15px;
+            font-style: italic;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &.dl_white_bg{
+        h2{
+            color: $heading_color;
+        }
+        .social_icon{
+            a{
+                color: $heading_color;
+            }
+        }
+
+        .contact_form{
+            ::placeholder{
+                color: #777;
+            }
+            textarea, .form-control, .nc_select{
+                border-color: #ddd;;
+                color: #777;
+                @include transform_time(.3s);
+                .list{
+                    width: 100%;
+                    color: #111;
+                }
+                &:focus{
+                    border-color: #111;
+                    color: #111;
+                    ::placeholder{
+                        color: #111;
+                    }
+                }
+            }
+            
+            .form_note{
+                margin-top: 0;
+                font-size: 15px;
+                font-style: italic;
+                @media #{$tab}{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.contact_form_wrapper{
+    background-color: $white;
+    box-shadow: 0px 20px 50px 0px rgba(0,0,0,.1);
+    margin-top: 0;
+    margin-top: -100px;
+    padding: 70px;
+    @media #{$mobile} {
+        margin-top: -50px;
+        padding: 25px;
+    }
+    @media #{$tab_device} {
+        margin-top: -50px;
+        padding: 30px;
+    }
+    @media #{$medium_device} {
+        margin-top: -70px;
+        padding: 40px;
+    }
+}
+.map_section_content{
+    .title{
+        margin-bottom: 20px;
+    }
+    .animated_border_btn{
+        color: #5758e0;
+        margin-top: 30px;
+    }
+}
+#contactMap {
+    width: 100%;
+    height: 320px;
+    @media #{$mobile}{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 70px;
+    }
+}
+.map_info_inner{
+    .single_additional_info{
+        margin-top: 49px;
+        .info_title{
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 1.32em;
+            margin: 0 0 18px;
+        }
+        .info_dec{
+            font-size: 15px;
+            line-height: 1.74em;
+        }
+        a.info_dec{
+            color: #888;
+            display: block;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.dl_cta_section{
+    .billey_icon{
+        position: relative;
+        z-index: 1;
+        height: 90px;
+        width: 90px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .billey_icon_shape_1, .billey_icon_shape_2{
+        border-radius: 50%;
+        background-image: -webkit-linear-gradient(315deg,rgba(241,212,211,.17) 15%,rgba(223,169,168,.17) 85%);
+        background-image: linear-gradient(-225deg,rgba(241,212,211,.17) 15%,rgba(223,169,168,.17) 85%);
+    }
+    .billey_icon_shape_1{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: -80px;
+        left: -66px;
+    }
+    .billey_icon_shape_2{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: -67px;
+    }
+    h2{
+        a{
+            color: #e2aeb3;
+            position: relative;
+        }
+    }
+    p{
+        margin-top: 25px;
+    }
+    .cta_btn{
+        margin-top: 40px;
+        .cu_btn{
+            margin: 0 10px;
+            @media #{$tab}{
+                margin: 10px;
+            }
+        }
+    }
+    &.style_2{
+        background-color: #c18f4e;
+        text-align: center;
+        padding: 25px 0;
+        .description{
+            margin-top: 0;
+            color: $white;
+            font-size: 16px;
+        }
+        .link_animate_border{
+            color: $white;
+            font-weight: 600;
+            &:after, &:before{
+                background-color: $white;
+                height: 1px;
+            }
+        }
+    }
+}
+
+.cta_parallax_bg{
+    background-image: url("../img/call-to-action-bg-01.jpg");
+    &.sec_padding{
+        padding: 158px 0 154px;
+    }
+}
+.dl_cta_parallax_content{
+    .title{
+        font-size: 50px;
+        line-height: 1.4em;
+        color: #fff;
+        margin-bottom: 43px;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+    }
+}
+
+//cta style 2
+.cta_section_thumb{
+    overflow: hidden;
+    &.bg_1{
+        @include background ("../img/call-to-action-bg-01.jpg");
+        height: 100%;
+        width: 100%;
+        @media #{$mobile}{
+            height: 350px;
+        }
+    }
+}
+.cta_section_content{
+    padding: 161px 15px 161px 165px;
+    @media #{$tab}{
+        padding: 40px;
+    }
+    .sub_title{
+        font-family: "Spectral",Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: italic;
+        color: rgba(255,255,255,.4);
+        margin-bottom: 22px;
+        text-transform: capitalize;
+    }
+    .description{
+        margin-top: 33px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    .cu_btn{
+        margin-top: 55px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+}
+.cta_section{
+    &.color_bg{
+        background-color: #f49846;
+        padding: 86px 0 72px;
+    }
+}
+.cta_section_inner_content{
+    .title{
+        font-size: 40px;
+        font-weight: 200;
+        line-height: 1.4em;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .cu_btn{
+        &.btn_5{
+            border-color: rgba(255,255,255,.3);
+            &:hover{
+                background-color: #111;
+                border: 2px solid #111;
+                color: #fff;
+            }
+        }
+    }
+}

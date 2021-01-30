@@ -1,0 +1,423 @@
+.subscribetion_bg{
+     @include background ("../img/sub_bg.jpg");
+ }
+.subscribetion_area_content{
+    .title{
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1em;
+        letter-spacing: 4.38px;
+        color: #fff;
+        font-family: $pf_font;
+        @media #{$mobile}{
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            font-size: 30px;
+        }
+        @media #{$medium_device}{
+            font-size: 50px;
+        }
+    }
+    .sub_title{
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 1em;
+        color: #f7b500;
+        font-family: $mr_font;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        @media #{$mobile}{
+            font-size: 25px;
+        }
+        @media #{$tab_device}{
+            font-size: 40px;
+        }
+        @media #{$medium_device}{
+            font-size: 50px;
+        }
+    }
+    @media #{$mobile}{
+        .cu_btn{
+            padding: 14px 15px;
+            font-size: 13px;
+        }
+    }
+    .description{
+        color: #fff;
+        margin-bottom: 40px;
+        @media #{$mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 25px;
+        }
+    }
+    .cu_btn {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        &:hover{
+            border-width: 2px !important;
+        }
+    }
+    &.style_2{
+        .title{
+            font-weight: 300;
+            text-transform: capitalize;
+            color: $heading_color;
+            font-family: $ft_font;
+            line-height: 1.37em;
+            margin-bottom: 25px;
+            font-size: 46px;
+            @media #{$mobile}{
+                font-size: 34px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            @media #{$tab_device}{
+                font-size: 40px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            @media #{$big_device}{
+                font-size: 40px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+        }
+        .description{
+            color: $text_color;
+            margin-bottom: 40px;
+            @media #{$mobile}{
+                margin-bottom: 30px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 35px;
+            }
+        }
+        .cu_btn{
+            background-color: #c18f4e;
+            border: 1px solid #c18f4e;
+            &:hover{
+                background-color: #111;
+                border: 1px solid #111 !important;
+                color: #c18f4e;
+            }
+        }
+    }
+    &.style_3{
+        .dl_subscribetion_area_title{
+            text-align: center;
+            .title{
+                font-size: 36px;
+                font-weight: 300;
+                color: $heading_color;
+                font-family: $cer_font;
+                text-transform: capitalize;
+                letter-spacing: 0;
+            }
+            .description{
+                margin-top: 10px;
+                color: #888;
+                margin-bottom: 32px;
+            }
+        }
+        .input-group{
+            .form-control{
+                border: 1px solid #eee;
+                background-color: #f7f7f7;
+                min-height: 55px;
+                border-radius: 0;
+                padding: 6px 16px;
+                font-size: 16px;
+            }
+            .input-group-text{
+                background-color: $heading_color;
+                border: 1px solid $heading_color;
+                border-radius: 0;
+                color: $white;
+                min-width: 150px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .desc{
+            font-size: 14px;
+            font-style: italic;
+            color: #888;
+            font-family: $cer_font;
+            margin-top: 22px;
+        }
+    }
+    &.style_4{
+        .dl_subscribetion_area_title{
+            text-align: center;
+            .title{
+                font-size: 36px;
+                font-weight: 300;
+                color: $heading_color;
+                font-family: $cer_font;
+                text-transform: capitalize;
+                letter-spacing: 0;
+                line-height: 1.67em;
+            }
+            .description{
+                margin-top: 10px;
+                color: #888;
+                margin-bottom: 32px;
+            }
+        }
+        .input-group{
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,.04);
+            .form-control{
+                border: 1px solid #fff;
+                background-color: #fff;
+                min-height: 55px;
+                border-radius: 0;
+                padding: 6px 16px;
+                font-size: 16px;
+            }
+            .input-group-text{
+                background-color: $heading_color;
+                border: 1px solid $heading_color;
+                border-radius: 0;
+                color: $white;
+                min-width: 150px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .desc{
+            font-size: 14px;
+            font-style: italic;
+            color: #888;
+            font-family: $cer_font;
+            margin-top: 22px;
+        }
+    }
+}
+
+
+.subscription_plan_bg{
+    @include background ("../img/home-cosmetics-launch-pricing-bg.jpg");
+}
+.subscription_plan_content{
+    padding: 66px 37px 48px;
+    background-color: $white;
+    .title{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            position: relative;
+            padding-left: 30px;
+            margin: 10px 0;
+            font-size: 16px;
+            i{
+                position: absolute;
+                left: 0;
+                transform: translateY(-50%);
+                font-size: 12px;
+                color: #b9b9b9;
+                top: 17px;
+            }
+        }
+    }
+    .price{
+        font-size: 16px;
+        margin-top: 38px;
+        span{
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2em;
+            color: #111;
+            font-family: $cer_font;
+        }
+    }
+    .cu_btn{
+        margin-top: 30px;
+    }
+    .heading_title{
+        font-size: 15px;
+        line-height: 2.14em;
+        margin-top: 14px;
+        color: #888;
+        display: block;
+    }
+}
+
+//subscribetion area css
+.subscribetion_area{
+    &.gradient_overlay{
+        background-image: linear-gradient(70deg,#5b3ff8 0%,#b282ea 70%);
+    }
+    .subscribetion_content{
+        .title{
+            font-size: 50px;
+            font-weight: 400;
+            color: #fff;
+            @media #{$tab}{
+                font-size: 25px;
+            }
+            @media #{$medium_device}{
+                font-size: 25px;
+            }
+        }
+        .description{
+            font-size: 20px;
+            line-height: 1.6em;
+            color: #fff;
+        }
+    }
+    form{
+        .desc{
+            margin-top: 46px;
+            color: $white;
+            font-size: 16px;
+        }
+        @media #{$tab}{
+            .cu_btn{
+                width: 100%;
+
+            }
+        }
+    }
+}
+.slider_subscribetion_area, .modern_slider_option{
+    overflow: hidden;
+    .single_subscribetion_area{
+        padding: 220px 0 205px;
+        @media #{$tab}{
+            padding: 70px 0;
+        }
+        position: relative;
+        .single_subscribetion_bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: transform 11s cubic-bezier(.1,.2,.7,1);
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .bg_1{
+                @include background("../img/slider_img/home-03-modern-slider-slide-01-bg.jpg");
+                transform: scale(1.3);
+                backface-visibility: hidden;
+                transition: transform 11s cubic-bezier(.1,.2,.7,1);
+                width: 100%;
+                height: 100%;
+            }
+            .bg_2{
+                @include background ("../img/slider_img/modern-branding-slide-02-bg.jpg");
+                transform: scale(1.3);
+                backface-visibility: hidden;
+                transition: transform 11s cubic-bezier(.1,.2,.7,1);
+                width: 100%;
+                height: 100%;
+            }
+            .bg_3{
+                @include background ("../img/slider_img/modern-branding-slide-03-bg.jpg");
+                transform: scale(1.3);
+                backface-visibility: hidden;
+                transition: transform 11s cubic-bezier(.1,.2,.7,1);
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title{
+            font-size: 50px;
+            line-height: 1.4em;
+            font-family: $ft_font;
+            @media #{$tab}{
+                font-size: 30px;
+            }
+        }
+    }
+    .active{
+        .single_subscribetion_area{
+            .single_subscribetion_bg{
+                .bg_1{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    &.subscribetion_area_bg{
+        @include background ("../img/home-inspirational-creations-call-out-bg.jpg");
+    }
+}
+.modern_slider_option{
+    .single_subscribetion_area{
+        padding: 320px 0 310px;
+        @media #{$tab}{
+            padding: 70px 0;
+        }
+        position: relative;
+        .title{
+            font-size: 50px;
+            line-height: 1.4em;
+            font-family: $ft_font;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            @media #{$tab}{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .active{
+        .single_subscribetion_area{
+            .title{
+                animation: fadeInUp .5s both 1.1s;
+            }
+            .dl_link_btn {
+                animation: fadeInUp .5s both 1.3s;
+            }
+        }
+    }
+    .owl-prev, .owl-next{
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+        color: #111;
+        border: 1px solid #ddd !important;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0,0,0,.01);
+        @include transform_time(.3s);
+        background-color: transparent;
+        margin: 0 5px;
+        i{
+            font-size: 14px;
+            color: #fff;
+        }
+        &:hover{
+            background-color: #111 !important;
+            border: 1px solid #111 !important;
+            i{
+                color: #fff;
+            }
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        bottom: 80px;
+        left: 21%;
+        @media #{$xs_mobile}{
+            left: 0%;
+        }
+    }
+}
+
+
+//

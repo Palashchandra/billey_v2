@@ -1,0 +1,82 @@
+.tourist_place_details{
+    width: 58%;
+    margin: 0 auto;
+    @media #{$mobile}{
+        width: 100%;
+        padding: 40px 20px 70px;
+    }
+    @media #{$tab_device}{
+        width: 90%;
+        padding: 40px 20px;
+    }
+    @media #{$medium_device}{
+        padding: 40px 20px;
+    }
+    .heading{
+        @media #{$tab}{
+            font-size: 35px;
+        }
+        @media #{$big_screen}{
+            font-size: 35px;
+        }
+        @media #{$extra_big_screen}{
+            font-size: 35px;
+        }
+        span{
+            font-family: $pf_font;
+            font-style: italic;
+        }
+    }
+    .description{
+        margin-top: 44px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            margin-top: 20px;
+        }
+        @media #{$big_screen}{
+            margin-top: 20px;
+        }
+        @media #{$extra_big_screen}{
+            margin-top: 30px;
+        }
+    }
+    .animated_border_btn{
+        margin-top: 60px;
+        color: #e02020;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            margin-top: 20px;
+        }
+        @media #{$big_screen}{
+            margin-top: 30px;
+        }
+        @media #{$extra_big_screen}{
+            margin-top: 30px;
+        }
+        &:before {
+            background-color: #e02020;
+            
+        }
+    }
+}
+.tourist_place_thumb{
+    @media #{$tab_device}{
+        height: 400px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    @media #{$medium_device}{
+        height: 500px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+

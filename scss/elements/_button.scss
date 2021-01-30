@@ -1,0 +1,14 @@
+.page_element{
+    .dl_section_title {
+        margin-bottom: 30px;
+    }
+}
+
+.dl_element_btn_list{
+    .cu_btn{
+        margin-right: 20px;
+        @media #{$tab}{
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.freaured_area_list{
+    display: flex;
+    flex-wrap: wrap;
+    .single_freaured_area{
+        flex: 33.33% 0 0;
+        text-align: center;
+        border-right: 1px solid #eee;
+        padding: 0 40px;
+        margin-bottom: 30px;
+        @media #{$mobile}{
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+            border-right: 0px solid transparent;
+        }
+        @media #{$tab_device}{
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 50px;
+            border-right: 0px solid transparent;
+        }
+        .title{
+            font-family: "CerebriSans",Sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 1.74em;
+            letter-spacing: 1.88px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.75em;
+        }
+        &:last-child{
+            border-right: 0 solid transparent;
+        }
+    }
+}

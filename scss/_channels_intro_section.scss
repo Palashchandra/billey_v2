@@ -1,0 +1,122 @@
+.channels_intro_section{
+    z-index: 1;
+    &.sec_padding{
+        padding: 120px 0 220px;
+        @media #{$mobile}{
+            padding: 120px 0 0;
+        }
+    }
+    &.channels_intro_bg{
+        background-color: #8536cb;
+    }
+    .dl_section_title{
+        .sub_title{
+            color: #f474bb;
+        }
+    }
+    .video_popup_btn{
+        width: 120px;
+        height: 120px;
+        background-color: $white;
+        line-height: 120px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        font-size: 40px;
+        color: #111;
+        margin-left: 2px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 2;
+        position: relative;
+        box-shadow: 0px 20px 40px 0px rgba(0,0,0,.39);
+        overflow: hidden;
+        @media #{$mobile}{
+            width: 90px;
+            height: 90px;
+            background-color: $white;
+            line-height: 90px;
+        }
+    }
+    .video_thumb{
+        width: 100%;
+        @media #{$mobile}{
+            width: 90%;
+        }
+    }
+    .video_popup_area{
+        &:hover{
+            .video_thumb{
+                transform: scale(1.1);
+            }
+            .video_popup_btn{
+                background-color: #f474bb;
+                .icon:before{
+                    border-left: 15px solid #fff;
+                    border-left-color: #fff;
+                }
+            }
+            
+        }
+    }
+    .video_thumb_section{
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -62px;
+        box-shadow: 0px 30px 50px 0px rgba(0,0,0,.1);
+        @media #{$mobile}{
+            box-shadow: none;
+        }
+    }
+    .channels_intro{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .parallax_shap{
+        width: 100%;
+        height: 100%;
+    }
+    [class^="channels_intro_shape_"], [class*="channels_intro_shape_"] {
+        position: absolute;
+        @media #{$mobile}{
+            img{
+                max-width: 70%;
+            }
+        }
+    }
+    .layer{
+        position: relative !important;
+    }
+    .channels_intro_shape_5{
+        right: 0;
+        bottom: 10%;
+    }
+    .channels_intro_shape_3{
+        left: -100px;
+        top: 30%;
+    }
+    .channels_intro_shape_6{
+        right: 20%;
+        top: -50px;
+    }
+    .channels_intro_shape_4{
+        left: 20%;
+        top: 50px;
+    }
+    .channels_intro_shape_2{
+        left: 62%;
+        bottom: 46%;
+    }
+    .channels_intro_shape_1{
+        left: 8%;
+        bottom: 0%;
+    }
+}

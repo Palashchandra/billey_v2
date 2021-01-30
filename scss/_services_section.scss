@@ -1,0 +1,18 @@
+.single_services_section{
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
+    &.style_1{
+        .dl_sub_title{
+            margin-bottom: 17px;
+            color: #ca7c66;
+        }
+        .dl_title{
+            font-size: 20px;
+        }
+        .dl_description{
+            margin-top: 18px;
+            font-size: 16px;
+        }
+    }
+}

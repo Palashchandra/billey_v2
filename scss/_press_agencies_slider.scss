@@ -1,0 +1,30 @@
+.press_agencies_slider_inner {
+    margin: 0 -31% 0 -6%;
+    .swiper-slide{
+        max-width: 800px;
+    }
+}
+.single_press_agencies{
+    display: flex;
+    flex: 1 1 0;
+    height: 100%;
+    padding-left: 80px;
+    .single_press_content{
+        .sub_title{
+            opacity: 1;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #cd744e;
+        }
+        .slider_nimber{
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 1;
+            margin: 65px 0 48px;
+        }
+    }
+}

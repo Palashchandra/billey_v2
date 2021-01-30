@@ -1,0 +1,92 @@
+.list_element{
+    .title{
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+}
+.list{
+    a{
+        color: $heading_color;
+        &:hover{
+            color: $base_color_4;
+        }
+    }
+    &.style_1{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+    &.style_2{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 16px;
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: #5758e0;
+            }
+        }
+    }
+
+    &.style_3{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 16px;
+            i{
+                position: absolute;
+                left: 0;
+                top: 37%;
+                transform: translateY(-50%);
+                height: 5px;
+                width: 5px;
+                color: #5758e0;
+                font-size: 10px;
+                &.fs_16{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &.style_4{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 30px;
+            i{
+                position: absolute;
+                left: 0;
+                top: 37%;
+                transform: translateY(-50%);
+                height: 5px;
+                width: 5px;
+                color: #5758e0;
+                font-size: 16px;
+            }
+        }
+    }
+}

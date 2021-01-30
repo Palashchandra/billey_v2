@@ -1,0 +1,208 @@
+.feature_flip_box {
+    .flip_box_inner {
+        margin: 0 auto;
+        position: relative;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        height: 400px;
+        @media #{$tab}{
+            margin: 15px 0;
+        }
+    }
+
+    .flip_box_inner .flip_box_front,
+    .flip_box_inner .flip_box_back {
+        text-align: center;
+    }
+
+    .flip_box_inner .flip_box_front {
+        height: inherit;
+        position: absolute;
+        top: 0;
+        z-index: 900;
+        text-align: center;
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        width: 100%;
+        height: 100%;
+        &.rotate_Y{
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -ms-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+        }
+        .billey_icon{
+            margin-bottom: 32px;
+            @media #{$tab}{
+                margin-bottom: 15px;
+            }
+        }
+        .content{
+            margin-top: 17px;
+            color: $white;
+            font-size: 16px;
+            line-height: 1.875;
+        }
+        .title{
+            font-size: 22px;
+            line-height: 1.32em;
+            color: $white;
+        }
+    }
+    .flip_box_inner .flip_box_back {
+        height: inherit;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        -webkit-transform: rotateX(-180deg);
+        -moz-transform: rotateX(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        width: 100%;
+        height: 100%;
+        &.rotate_Y{
+            -webkit-transform: rotateX(0);
+            -moz-transform: rotateX(0);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -ms-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+        }
+    }
+    .flip_box_inner:hover .flip_box_front {
+        z-index: 900;
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        &.rotate_Y{
+            -webkit-transform: rotateX(0);
+            -moz-transform: rotateX(0);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+        }
+    }
+    .flip_box_inner:hover .flip_box_back {
+        z-index: 1000;
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    .front_box, .back_box {
+        background-color: #14bcc8;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        &.thumb_bg_1{
+            @include background ("../img/flip_box/flip-box-image-01.jpg");
+        }
+        &.thumb_bg_2{
+            @include background ("../img/flip_box/flip-box-image-02.jpg");
+        }
+        &.thumb_bg_3{
+            @include background ("../img/flip_box/flip-box-image-03.jpg");
+        }
+        &.thumb_bg_4{
+            @include background ("../img/flip_box/flip-box-image-04.jpg");
+        }
+        &.thumb_bg_5{
+            @include background ("../img/flip_box/flip-box-image-05.jpg");
+        }
+        &.thumb_bg_6{
+            @include background ("../img/flip_box/flip-box-image-06.jpg");
+        }
+        &.thumb_bg_7{
+            @include background ("../img/flip_box/flip-box-image-07.jpg");
+        }
+        &.thumb_bg_8{
+            @include background ("../img/flip_box/flip-box-image-08.jpg");
+        }
+        &.thumb_bg_9{
+            @include background ("../img/flip_box/flip-box-image-09.jpg");
+        }
+        &.thumb_bg_10{
+            @include background ("../img/flip_box/flip-box-image-10.jpg");
+        }
+        &.thumb_bg_11{
+            @include background ("../img/flip_box/flip-box-image-11.jpg");
+        }
+    }
+
+    .back_box {
+        background-color: #5758e0;
+    }
+    .front_box  {
+        .description{
+            display: inline-block;
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+    }
+    .flip_box_content{
+        .title{
+            display: inline-block;
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+        .description{
+            color: #fff;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .title + .description{
+            color: rgba(255,255,255,.62);
+        }
+        .animated_border{
+            padding: 5px 0;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+            &:before{
+                background-color: #fff;
+            }
+        }
+        .round_btn{
+            margin-top: 40px;
+        }
+    }
+}
+@media (min-width: 991px){
+    .dl_mr_30{
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+    .dl_pr_30{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

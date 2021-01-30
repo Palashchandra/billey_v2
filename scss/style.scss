@@ -1,0 +1,256 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Droitthemes
+@URL: http://droitthemes.com/
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Billey
+@Author:  Md. Shahadat Hussain
+@Developed By: Palash
+@Developer URL: http://droitthemes.com/
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ banner part
+07/ about
+08/ portfolio section
+09/ cta section
+10/ experiance list section 
+11/ client list section
+12/ contact section
+13/ icon box
+14/ featured list
+15/ accordion
+16/ team member
+17/ channels intro
+18/ team details
+19/ creative team
+20/ single blog
+21/ map section
+22/ img box
+23/ product wrapper
+24/ portfolio masonry
+25/ client feedback
+26/ subscribetion
+27/ single box
+28/ press agencies slider
+29/ intro section
+30/ tourist place
+31/ feature place
+32/ booking form
+33/ product section
+34/ cosmetics portfolio
+35/ emarketing strategies
+36/ pricing plan
+37/ testimonial
+38/ feature flip
+39/ tab content
+40/ about branding slider
+41/ services sectio
+42/ faq
+43/ blog masonry
+44/ scorll
+45/ breadcrumb
+46/ error page
+47/ element
+48/ portfolio details
+49/ sidebar
+50/ blog details
+51/ cart
+52/ checkout
+53/ product details
+54/ theme setting
+55/ footer
+=====================================================================*/ 
+
+//variables css
+@import "variables";
+
+//mixins css
+@import "mixins";
+
+//reset css
+@import "reset";
+
+//button css
+@import "button";
+
+//search section css
+@import "search";
+
+//header part style css
+@import "header";
+
+//banner section css
+@import "banner_part";
+
+//about section css
+@import "about";
+
+//portfolio section css
+@import "portfolio_section";
+
+//cta section css
+@import "cta_section";
+
+//experiance list section css
+@import "experiance_list";
+
+//client list section css
+@import "client_list";
+
+//contact section css
+@import "contact_section";
+
+//icon box wrapper section css
+@import "icon_box_wrapper";
+
+//featured list section css
+@import "featured_list_section";
+
+//accordion section css
+@import "accordion";
+
+//team member section css
+@import "team_member";
+
+//channels intro section css
+@import "channels_intro_section";
+
+//team details css
+@import "team_details_section";
+
+//creative team section css
+@import "creative_team_section";
+
+//single blog post section css
+@import "single_blog_post";
+
+//single blog post section css
+@import "map_section";
+
+//img box section css
+@import "img_box";
+
+//product wrapper section css
+@import "product_wrapper";
+
+//portfolio masonry section css
+@import "portfolio_masonry";
+
+//client feedback section css
+@import "client_feedback_section";
+
+//subscribetion area css
+@import "subscribetion_area";
+
+//single box area css
+@import "single_box";
+
+//press agencies slider css
+@import "press_agencies_slider";
+
+//intro section css
+@import "intro_section";
+
+//tourist place css
+@import "tourist_place_details";
+
+//feature place section css
+@import "feature_place";
+
+//booking form section css
+@import "booking_form";
+
+//product section css
+@import "product";
+
+//product section css
+@import "cosmetics_portfolio";
+
+//emarketing strategies css
+@import "emarketing_strategies";
+
+//pricing plan css
+@import "pricing_plan";
+
+//testimonial section css
+@import "testimonial_section";
+
+//feature flip box css
+@import "feature_flip_box";
+
+//tab content css
+@import "tab_content";
+
+//about branding slider css
+@import "about_branding_slider";
+
+//services section css
+@import "services_section";
+
+//faq section css
+@import "faq";
+
+//blog masonry css
+@import "blog_masonry";
+
+//scorll css
+@import "scorll";
+
+//breadcrumb css
+@import "breadcrumb";
+
+//breadcrumb css
+@import "contact";
+
+//error page css
+@import "error_page";
+
+//element css
+@import "elements/all.scss";
+
+//portfolio details css
+@import "portfolio_details";
+
+//portfolio details css
+@import "sidebar";
+
+//blog details css
+@import "blog_details";
+
+//cart css
+@import "cart";
+
+//checkout css
+@import "checkout";
+
+//product details css
+@import "product_details";
+
+//theme setting css
+@import "theme_setting";
+
+//featured product css
+@import "featured_product";
+
+//feature list area css
+@import "feature_list_area";
+
+//text box area css
+@import "text_box";
+
+//footer section css
+@import "footer";

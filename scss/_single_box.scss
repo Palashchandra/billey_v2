@@ -1,0 +1,116 @@
+.single_billey_box {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 30px;
+    }
+    &.video_popup_box{
+        .video_popup_area{
+            display: inline-block;
+        }
+        .video_popup_icon{
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            line-height: 120px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 40px;
+            color: #111;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: hidden;
+            @media #{$tab}{
+                width: 90px;
+                height: 90px;
+                line-height: 90px;
+            }
+            
+        }
+        .billey_box_thumb{
+            img{
+                width: 100%;
+                transition: all 1.5s cubic-bezier(0,0,.2,1);
+            }
+        }
+        &:hover{
+            .billey_box_thumb{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &.animated_shape_box{   
+        background-color: #fbf3f0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 45px 50px;
+        position: relative;
+        @media #{$mobile}{
+            padding: 50px 20px;
+        }
+        .title{
+            font-size:  2.377vw;
+            font-weight: 300;
+            line-height: 1.4em;
+            color: #cd744e;
+            font-weight: 300;
+            margin-bottom: 42px;
+            @media #{$tab}{
+                font-size: 34px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+            }
+        }
+        .animated_border{
+            padding: 5px 0;
+            color: #cd744e;
+            font-size: 13px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            &:before {
+                background-color: #cd744e;
+            }
+        }
+        .box_shape_2{
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            z-index: -1;
+        }
+        .box_shape_1{      
+            position: absolute;
+            top: -46%;
+            right: -58%;
+        }
+        .layer{
+            position: relative !important;
+            @media #{$mobile}{
+                max-width: 200px;
+            }
+        }
+    }
+    
+    .billey-shape svg {
+        height: auto;
+        width: 648px;
+    }
+    .billey-shape-fill {
+        fill: rgba(218,77,16,.2);
+    }
+}

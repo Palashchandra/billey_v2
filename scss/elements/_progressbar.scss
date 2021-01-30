@@ -1,0 +1,75 @@
+.single_progress_bar{
+    margin-bottom: 33px;
+    .progressbar_title{
+        color: #111;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+        margin-bottom: 9px;
+    }
+    .progressbar{
+        background-color: #f5f5f5;
+    }
+    .proggress{
+        background-color: #111;
+        height: 4px;
+    }
+    .bg_color_1{
+        .proggress{
+            background-color: #5bc0de;
+        }
+    }
+    .bg_color_2{
+        .proggress{
+            background-color: #f0ad4e;
+        }
+    }
+    .bg_color_3{
+        .proggress{
+            background-color: #5cb85c;
+        }
+    }
+    .bg_color_4{
+        .proggress{
+            background-color: #d9534f;
+        }
+    }
+    &.style_2{
+        position: relative;
+        .title{
+            font-size: 18px;
+            color: #888;
+        }
+        .proggress {
+            height: 30px;
+            position: relative;
+        }
+        .progressbar_title{
+            position: absolute;
+            left: 15px;
+            color: $white;
+            z-index: 9;
+            margin-bottom: 0;
+            font-size: 11px;
+            color: #fff;
+            bottom: 8px;
+            letter-spacing: 0;
+            font-weight: 300;
+        }
+        .percentCount {
+            float: right;
+            margin-top: 0;
+            clear: both;
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+            z-index: 9;
+            font-size: 11px;
+            position: absolute;
+            right: 15px;
+            top: 6px;
+        }
+    }
+}

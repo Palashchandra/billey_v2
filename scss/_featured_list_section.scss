@@ -1,0 +1,222 @@
+.featured_list_section {
+    .featured_list_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 22px;
+
+        @media #{$mobile} {
+            display: block;
+            align-items: center;
+        }
+        @media #{$tab_device} {
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 70px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            line-height: 50px;
+            @media #{$tab} {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .swiper_pagination {
+        text-align: center;
+        margin: 0 30px 0;
+
+        .swiper-pagination-bullet {
+            border-radius: 0;
+            width: 6px;
+            height: 6px;
+            background-color: #ddd;
+            text-align: center;
+            margin: 0 15px;
+            border-radius: 50%;
+            position: relative;
+            opacity: .8;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                content: "";
+                left: -15px;
+                top: -15px;
+                width: 16px;
+                height: 16px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                background-color: #111;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    left: -5px;
+                    top: -5px;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #111;
+                }
+            }
+
+            &.swiper-pagination-bullet-active {
+                background-color: $heading_color;
+
+                &:after {
+                    border: 1px solid #111;
+                    left: -15px;
+                    top: -15px;
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+.featured_list_slider {
+    overflow-x: hidden;
+}
+
+.featured_list_section {
+    overflow: hidden;
+
+    .featured_list_slider {
+        padding-top: 60px;
+        margin: 0 -37% 0 0;
+        @media #{$tab} {
+            padding-top: 30px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .single_featured_img {
+        display: inline-block;
+        overflow: hidden;
+
+        &:hover {
+            border-radius: 66px 0;
+
+            .featured_img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .featured_list_title {
+        .title {
+            font-size: 46px;
+            line-height: 1.32em;
+            @media #{$tab} {
+                margin-bottom: 25px;
+                font-size: 30px;
+            }
+        }
+
+        .animated_border {
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #111;
+            border-bottom: 1px solid #ddd;
+            @media #{$tab} {
+                margin-top: 25px;
+            }
+            &:before {
+                bottom: -1px;
+            }
+        }
+    }
+}
+
+.single_featured_list {
+    .title {
+        margin-top: 30px;
+        font-size: 20px;
+
+        a {
+            color: #111;
+
+            &:hover {
+                color: #f474bb;
+            }
+        }
+    }
+}
+
+//featured accordion content css
+.featured_content {
+    .sub_title {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #f474bb;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        margin-bottom: 24px;
+    }
+}
+
+.featured_img_list {
+    position: relative;
+    z-index: 1;
+    @media #{$tab} {
+        margin-bottom: 45px;
+    }
+    .layer {
+        position: relative !important;
+    }
+
+    .features_image {
+        margin-right: -100px;
+        @media #{$tab} {
+            margin-right: 0;
+        }
+        @media #{$medium_device} {
+            margin-right: 0;
+        }
+    }
+
+    .features_line_shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .features_gradient_shape {
+        position: absolute;
+        left: 15%;
+        top: 9%;
+    }
+
+    .features_dot_shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.featured_section {
+    position: relative;
+
+    .features_line {
+        position: absolute;
+        right: 11%;
+        top: 10%;
+        z-index: -1;
+    }
+}

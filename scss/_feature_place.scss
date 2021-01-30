@@ -1,0 +1,71 @@
+.dl_single_feature_place {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(-180deg,transparent 0%,#000 100%);
+        width: 100%;
+        height: 50%;
+
+    }
+    &:hover{
+        box-shadow: 0 60px 40px -40px rgba(51,51,51,.41);
+    }
+    .single_team_thumb{
+        overflow: hidden;
+    }
+    .single_team_content{
+        padding: 30px 35px 38px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .description{
+        font-size: 16px;
+        line-height: 1.75;
+        color: rgba(255,255,255,.6);
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    .red_bg_tag {
+        margin-bottom: 18px;
+    }
+}
+.red_bg_tag{
+    background-color: #e02020;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1.38px;
+    color: #fff;
+    padding: 6px 13px;
+    margin-bottom: 5px;
+}
+.feature_place_section{
+    .dl_single_feature_place{
+        margin-bottom: 50px;
+        padding-bottom: -10px;
+    }
+    .owl-dots{
+        text-align: center;
+        .owl-dot{
+            border-radius: 0;
+            width: 22px;
+            height: 4px;
+            background-color: #d8d8d8;
+            text-align: center;
+            margin: 0 5px;
+            &.active{
+                background-color: #111;
+            }
+        }
+    }
+}

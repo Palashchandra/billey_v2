@@ -1,0 +1,170 @@
+.dl_single_featured_product{
+    &.style_1{
+        display: flex;
+        align-items: flex-end;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ededed;
+        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        @media #{$mobile}{
+            display: block;
+        }        
+        @media #{$medium_device}{
+            display: block;
+        }
+        .video_popup_area{
+            overflow: hidden;
+            position: relative;
+            flex: 67% 0 0;
+            display: inline-block;
+            @media #{$mobile}{
+                flex: 100% 0 0;
+                display: inline-block;
+            }
+            @media #{$tab_device}{
+                flex: 50% 0 0;
+                display: inline-block;
+            }
+        }
+        img.video_popup_btn {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+        .dl_featured_product_content{
+            padding: 44px 40px;
+            .product_code{
+                font-family: "CerebriSans",Sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #ababab;
+            }
+            .dl_title{
+                font-size: 40px;
+                font-weight: 300;
+            }
+            .animated_border_btn{
+                color: #111;
+            }
+        }
+    }
+    &.style_2{
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        .dl_title{
+            font-size: 21px;
+            font-weight: 300;
+            position: absolute;
+            padding: 27px 40px;
+            bottom: 0;
+            left: 0;
+            
+        }
+    }
+}
+
+.featured_product_layout{
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    @media #{$tab}{
+        margin-top: 40px;
+    }
+    .product_layout_row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    .product_layout_col_6{
+        position: relative;
+        width: 100%;   
+        padding-right: 5px;
+        padding-left: 5px;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 10px;
+        @media #{$mobile}{
+            flex: 100% 0 0;
+            max-width: 100%;
+        }
+        @media #{$medium_device}{
+            flex: 100% 0 0;
+            max-width: 100%;
+        }
+    }
+}
+.dl_resent_product_list_container{
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    @media #{$tab}{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .product_layout_row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -25px;
+        margin-left: -25px;
+        @media #{$tab}{
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    }
+    .product_layout_col{
+        position: relative;
+        width: 100%;   
+        padding-right: 25px;
+        padding-left: 25px;
+        flex: 0 0 20%;
+        max-width: 20%;
+        margin-bottom: 40px;
+        @media #{$xs_mobile}{
+            padding-right: 0;
+            padding-left: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        @media #{$large_mobile}{
+            padding-right: 15px;
+            padding-left: 15px;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        @media #{$tab_device}{
+            padding-right: 15px;
+            padding-left: 15px;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        @media #{$medium_device}{
+            padding-right: 15px;
+            padding-left: 15px;
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+}

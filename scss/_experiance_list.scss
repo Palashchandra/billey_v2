@@ -1,0 +1,37 @@
+.single_experiance_list{
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0px 20px 50px 0px rgba(0,0,0,.05);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    img{
+        margin-bottom: 35px;
+    }
+    h4{
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        letter-spacing: 2px;
+        color: #dfabaa;
+        font-family: $cer_font;
+        margin: 0 0 24px;
+        padding: 0 0 17px;
+        border-style: solid;
+        border-width: 0 0 1px;
+        border-color: #eee;
+    }
+    .experiance_list_iner{
+        margin-bottom: 21px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.6em;
+            margin-top: 3px;
+        }
+    }
+}

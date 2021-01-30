@@ -1,0 +1,91 @@
+.map_img_inner{
+    position: relative;
+    z-index: 1;
+    .map_image{
+        margin-left: 10%;
+        @media #{$tab} {
+            margin-left: 0;
+        }
+    }
+    .map_line{
+        position: absolute;
+        left: 11%;
+        top: -55px;
+        z-index: -1;
+        @media #{$tab} {
+            left: 0;
+        }
+    }
+    .map_shape_image{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        z-index: -1;
+    }
+}
+.map_section_content{
+    @media #{$tab}{
+        margin-bottom: 50px;
+    }
+    .sub_title{
+        margin-bottom: 24px;
+    }
+    .title{
+        font-size: 46px;
+        line-height: 1.32em;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+    }
+    .additional_info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .single_additional_info{
+        margin-top: 45px;
+        flex: 50% 0 0;
+        .info_title{
+           font-size: 18px;
+           line-height: 1.34em; 
+           margin-bottom: 15px;
+        }
+        .social_icon{
+            a{
+                margin-right: 15px;
+            }
+            i{
+                font-size: 24px;
+                color: #111;
+                &:hover{
+                    color: #f474bb;
+                }
+            }
+        }
+    }
+}
+
+#multi_loaction_map{
+    .single_location .location_info {
+        padding: 0 20px;
+    }
+    .single_location p {
+        margin: 5px 0 0;
+    }
+    #content {
+        padding: 20px 0 10px 25px;
+    }
+}
+
+.shape_css{
+    position: relative;
+    z-index: 1;
+}
+.map_section{
+    position: relative;
+}
+.map_section_shape{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    z-index: -2;
+}

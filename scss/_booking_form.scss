@@ -1,0 +1,106 @@
+.bookimg_form_section{
+    &.sec_padding{
+        padding: 120px 0 300px;
+    }
+    &.booking_form_bg{
+        @include background ("../img/travel/home-travel-agency-booking-bg.jpg");
+    }
+}
+.bookimg_form_content {
+    .title{
+        color: $white;
+        margin-top: 24px;
+        span{
+            font-style: italic;
+            font-family: $pf_font;
+        }
+    }
+    .description{
+        color: #fff;
+        margin-top: 17px;
+    }
+}
+.bookimg_form_row{
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 0;
+    margin-bottom: -124px;
+    padding: 84px 45px 33px;
+    z-index: 1;
+    align-items: flex-end;
+    width: 100%;
+    bottom: -300px;
+    @media #{$mobile}{
+        padding: 110px 25px 30px;
+    }
+    .form_tricker{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 60px;
+        top: 58px;
+        p{
+            margin-right: 15px;
+            font-size: 15px;
+            font-style: italic;
+        }
+    }
+    .form-group{
+        margin-bottom: 27px;
+        label{
+            font-size: 13px;
+            font-weight: 500;
+            color: #a1a1a1;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 16px;
+            display: block;
+        }
+        .nc_select, .form-control{
+            border-radius: 0;
+            background-color: #f6f6f6;
+            border: 1px solid #f6f6f6;
+            width: 100%;
+            padding: 3px 20px;
+            font-size: 15px;
+            color: #111;
+            height: 55px;
+            line-height: 55px;
+        }
+        .bookimg_form_select{
+            .nc_select{
+                padding: 3px 20px;
+                line-height: 49px;
+                &:after{
+                    right: 15px;
+                }
+            }
+        }
+        .btn {
+            color: #fff;
+            border-color: #E02020;
+            background-color: #E02020; 
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 17px 30px;
+        }
+    }
+    .bookimg_form_select{
+        display: flex;
+        min-width: 70px;
+        .sm_width{
+            margin-right: 15px;
+            display: inline-block;
+            .nc_select:after {
+                right: 9px;
+            }
+        }
+    }
+}

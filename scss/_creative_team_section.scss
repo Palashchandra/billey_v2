@@ -1,0 +1,72 @@
+.creative_team_section{
+    &.sec_padding{
+        padding: 375px 0 120px;
+        @media #{$xs_mobile}{
+            padding: 120px 0 70px;
+        }
+        @media #{$large_mobile}{
+            padding: 150px 0 70px;
+        }
+        @media #{$tab_device}{
+            padding: 150px 0 80px;
+        }
+        @media #{$medium_device}{
+            padding: 250px 0 80px;
+        }
+    }
+}
+.creative_team_content{
+    .sub_title{
+        margin-bottom: 24px;
+        @media #{$tab}{
+            margin-bottom: 16px;
+        }
+    }
+    .dec{
+        margin-top: 39px;
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+    }
+    .cu_btn{
+        margin-top: 60px;
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+    }
+}
+.single_circle_progressber{
+    @media #{$tab}{
+        margin-top: 35px;
+    }
+    .circle{
+            position: relative;
+            width: 140px;
+            height: 140px;
+        canvas{
+            width: 140px;
+            height: 140px;
+        }
+        .number{
+            font-size: 30px;
+            font-weight: 300;
+            color: #111;
+            margin-bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    h4{
+        font-size: 20px;
+        line-height: 1.3em;
+        margin-top: 45px;
+        margin-bottom: 16px;
+        @media #{$mobile}{
+            margin-top: 25px;
+        }
+    }
+}

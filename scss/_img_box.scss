@@ -1,0 +1,103 @@
+.dl_single_img_box{
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 40px;
+    }
+    &.style_1{
+        .box_img{
+            margin-bottom: 34px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+        .title{
+            font-size: 20px;
+            line-height: 1.3em;
+            color: #fff;
+            margin-bottom: 15px;
+            @media #{$tab}{
+                margin-bottom: 10px;
+            }
+        }
+        .description{
+            font-size: 16px;
+        }
+    }
+    &.style_2{
+        .box_img{
+            margin-bottom: 46px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 20px;
+            }
+        }
+        .title{
+            font-size: 24px;
+            line-height: 1.3em;
+            margin-bottom: 22px;
+            @media #{$tab}{
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 15px;
+            }
+        }
+        .description{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .image_box_area{
+        padding-bottom: 50px;
+        .container-fluid{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .row {
+            margin-right: -25px;
+            margin-left: -25px;
+            .col-lg-4{
+                padding-right: 25px;
+                padding-left: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .image_box_area{
+        padding-bottom: 50px;
+    }
+}
+.single_blog_img_box{
+    position: relative;
+    display: inline-block; 
+    @media (max-width: 1200px){
+        margin-bottom: 30px;
+    }
+    .title{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: 300;
+        background: #fff;
+        padding: 6px 34px 7px;
+        max-width: 210px;
+        @media #{$tab}{
+            font-size: 20px;
+        }
+        @media #{$medium_device}{
+            font-size: 20px;
+        }
+    }
+}

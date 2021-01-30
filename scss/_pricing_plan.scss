@@ -1,0 +1,198 @@
+.pricing_section{
+    .faq{
+        margin-top: 53px;
+        font-size: 16px;
+        line-height: 1;
+        .link_animate_border{
+            color: #2a53ff;
+            &:after, &:before{
+                background: #2a53ff;
+                height: 1px;
+                bottom: -1px;
+            }
+        }
+    }
+}
+.single_pricing_plan{
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.05);
+    padding: 25px 30px 37px;
+    @media #{$mobile}{
+        margin-bottom: 40px;
+        &.style_2{
+            margin-bottom: 0;
+        }
+    }
+    @media #{$tab_device}{
+        &.style_2{
+            margin-bottom: 40px;
+        }
+    }
+    @media #{$medium_device}{
+        margin-bottom: 40px;
+    }
+    .plan_name{
+        font-size: 18px;
+        line-height: .8;
+        margin-bottom: 26px;
+    }
+    .price{
+        font-size: 40px;
+        line-height: 1;
+        font-weight: 600;
+    }
+    .description{
+        display: block;
+        font-size: 15px;
+        margin: 15px 0 0;
+        color: #777;
+    }
+    .check_line{
+        margin-top: 33px;
+        padding-top: 22px;
+        border-top: 1px solid #eee;
+        i{
+            color: #2a53ff;
+            font-size: 12px;
+            margin-right: 14px;
+        }
+        li{
+            font-size: 15px;
+            margin: 11px 0;
+        }
+    }
+    .cu_btn {
+        width: 100%;
+        display: block;
+        margin-top: 38px;
+        &.btn_1{
+            border: 2px solid #eee;
+            &:hover{
+                background-color: #111;
+                border: 2px solid #111;
+            }
+        }
+    }
+    &.style_2{
+        background-color: #f9f6f2;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+        padding: 41px 31px 45px;
+        .price{
+            color: #c18f4e;
+            font-weight: 300;
+            font-size: 50px;
+            span{
+                font-size: 16px;
+            }
+        }
+        .check_line i {
+            color: #c18f4e;
+        }
+        .cu_btn {
+            width: fit-content;
+        }
+        &.center{
+            border-style: solid;
+            border-color: #c18f4e;
+            border-width: 2px;
+            box-shadow: 0px 0px 40px 0px rgba(51,51,51,.1);
+            transform: scale(1.16);
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            @media #{$tab}{
+                transform: scale(1);
+            }
+            .cu_btn {
+                background-color: #111;
+                border: 1px solid #111;
+                color: $white;
+                &:hover{
+                    border: 1px solid #c18f4e;
+                    background-color: #c18f4e;
+                }
+            }
+        }
+    }
+    &.style_3{
+        background-color: transparent;
+        box-shadow: none;
+        text-align: center;
+        padding: 75px 40px 61px !important;
+        @media #{$tab}{
+            padding: 35px 25px !important;
+        }
+        @media #{$medium_device}{
+            padding: 35px 25px !important;
+        }
+        .price{
+            color: #5758e0;
+            font-weight: 500;
+            font-size: 60px;
+            @media #{$tab}{
+                font-size: 35px;
+            }
+            span{
+                font-size: 15px;
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 0;
+                color: #ababab;
+            }
+        }
+        .cu_btn{
+            background-color: #f1f1f1;
+            border: 1px solid #f1f1f1;
+            color: #111;
+            display: inline-block;
+            max-width: 180px;
+            &:hover{
+                background-color: #5758e0;
+                color: #fff;
+                border: 1px solid #5758e0;
+            }
+        }
+    }
+}
+.price_faq {
+    .link_animate_border{
+        font-size: 16px;
+    }
+}
+.pricing_part_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.05);
+    position: relative;
+    z-index: 1;
+    .single_pricing_plan{
+        flex: 33.33% 0 0;
+        padding: 75px 30px 61px;
+    }
+}
+.pricing_section_bg{
+    position: relative;
+    overflow: hidden;
+    .pricing_plan_shape{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        @media #{$tab}{
+            width: auto;
+        }
+    }
+}
+.link_animate_border{
+    &.color_2{
+        color: #5758e0;
+        &:before, &:after{
+            height: 1px;
+            background-color: #5758e0;
+        }
+    }
+} 

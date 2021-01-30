@@ -1,0 +1,165 @@
+.feature_product_wrapper{
+    position: relative;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        background-image: linear-gradient(-180deg,transparent 0%,transparent 40%,#000 100%);
+    }
+    .product_content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 60px 20px;
+        text-align: center;
+        z-index: 8;
+        .title{
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: $white;
+            @media #{$mobile}{
+                font-size: 16px;
+            }
+            @media #{$tab_device}{
+                font-size: 20px;
+            }
+        }
+        .description{
+            font-family: "Playfair Display",Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-style: italic;
+            line-height: 1.32em;
+            color: rgba(255,255,255,.6);
+        }
+    }
+    &.style_2{
+        .title{
+            font-size: 46px;
+            color: $white;
+            text-transform: capitalize;
+            @media #{$mobile}{
+                font-size: 16px;
+            }
+            @media #{$tab_device}{
+                font-size: 20px;
+            }
+        }
+        .description{
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: rgba(255,255,255, 1);
+            margin-bottom: 13px;
+            font-style: normal;
+            letter-spacing: 1.38px;
+            font-family: $ft_font;
+            text-transform: uppercase;
+        }
+        &:after{
+            background-image: none;
+        }
+        .product_content{
+            top: 52%;
+            bottom: auto;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            padding: 20px;
+        }
+        &:hover{
+            &:after{
+                background-color: #111;
+            }
+            .product_content{
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &.bg_color_1{
+            &:hover{
+                &:after{
+                    background-color: #93c9d4;
+                }
+            }
+        }
+        &.bg_color_2{
+            &:hover{
+                &:after{
+                    background-color: #b28eb8;
+                }
+            }
+        }
+        &.bg_color_3{
+            &:hover{
+                &:after{
+                    background-color: #4a6437;
+                }
+            }
+        }
+        &.bg_color_4{
+            &:hover{
+                &:after{
+                    background-color: #251b18;
+                }
+            }
+        }
+        &.bg_color_5{
+            &:hover{
+                &:after{
+                    background-color: #c65a5a;
+                }
+            }
+        }
+        &.bg_color_6{
+            .title{
+                color: $heading_color;
+            }
+            .description{
+                color: $heading_color;
+            }
+            &:hover{
+                &:after{
+                    background-color: #f4f4f4;
+                }
+            }
+        }
+        &.bg_color_7{
+            .title{
+                color: $heading_color;
+            }
+            .description{
+                color: $heading_color;
+            }
+            &:hover{
+                &:after{
+                    background-color: #f6dad3;
+                }
+            }
+        }
+        &.bg_color_8{
+            .title{
+                color: $heading_color;
+            }
+            .description{
+                color: $heading_color;
+            }
+            &:hover{
+                &:after{
+                    background-color: #c9eff2;
+                }
+            }
+        }
+    }
+}
